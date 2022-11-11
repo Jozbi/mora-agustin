@@ -278,6 +278,9 @@ p {
     left: auto;
     right: auto;
 }
+.carousel-dark .carousel-control-prev-icon {
+    background-color: #100F0F;
+}
 @media screen and (max-width: 768px){
     #carouselDesktop {
         display: none;
