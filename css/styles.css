@@ -219,6 +219,7 @@ p {
 }
 .feature__img {
     width: 45px;
+    margin-top: -2vh;
     grid-area: icon;
     justify-self: center;
     color: #ffffff;
@@ -226,15 +227,12 @@ p {
 .feature__h3 {
     grid-area: title;
     margin-bottom: .5rem;
+    font-weight: 900;
+    font-size: 1.5rem
 }
 .feature__p {
     grid-area: text;
     margin: 0;
-}
-@media screen and (max-width: 1200px) {
-    .feature__card:not(:last-child) {
-        margin-bottom: .5rem;
-    }
 }
 @media screen and (max-width: 768px) {
     .feature__container {
@@ -242,6 +240,9 @@ p {
     }
     .feature__card {
         margin: .8rem;
+    }
+    .feature__img {
+        margin-top: -1.5vh;
     }
 }
 /* Client */
@@ -267,6 +268,15 @@ p {
 }
 #carouselPhone {
     display: none;
+}
+.carousel-inner {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-control-prev {
+    left: auto;
+    right: auto;
 }
 @media screen and (max-width: 768px){
     #carouselDesktop {
