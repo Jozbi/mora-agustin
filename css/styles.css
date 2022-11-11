@@ -20,24 +20,22 @@ body {
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
 }
-.icon {
-    margin-left: .3rem; 
-}
 .btn--icon {
     width: 100%;
     display: flex;
     align-items: center;
 }
+.icon {
+    margin-left: .3rem; 
+}
 /* --------------------TIPOGRAFIA----------------------- */
 body {
     font-family: 'Lato', sans-serif;
 }
-
 h1 {
     letter-spacing: .2rem;
     font-size: 2rem;
 }
-
 p {
     font-size: 1.2rem;
     margin: 0;
@@ -199,7 +197,6 @@ p {
     "none link";
     align-items: center;
     justify-content: center;
-    
     align-items: center;
 }
 .feature__link {
@@ -304,11 +301,12 @@ p {
     border: 1px solid black;
 }
 .scrolling__title {
-    position: absolute;
     width: 100%;
+    margin: 0;
+    position: absolute;
+    text-align: center;
     font-size: 2rem;
     font-weight: 900;
-    text-align: center;
     color: #ffffff;
     transform: translateX(90%);
     animation: scrolling 14s linear infinite;
@@ -328,7 +326,7 @@ p {
     padding: 1.5rem 2rem;
 }
 .service__card {
-    width: 75%;
+    width: 90%;
     height: 275px;
     display: flex;
     flex-direction: row;
@@ -403,8 +401,6 @@ p {
 @media screen and (max-width:1200px) {
     .service__card {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
     .card__tagbox {
         display: flex;
@@ -423,8 +419,6 @@ p {
         flex-direction: column;
         height: auto;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
     .card__img {
         width: 100%;
