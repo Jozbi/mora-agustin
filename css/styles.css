@@ -131,7 +131,7 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: url(../assets/images/hero.jpg);
+    background-image: url(../assets/images/hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -268,7 +268,7 @@ p {
 }
 .carousel-inner {
     width: 90%;
-    height: 22vh;
+    height: 25vh;
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -280,6 +280,7 @@ p {
 }
 .bg-body {
     background-color: #dddddd !important;
+    color: #dddddd !important;
 }
 @media screen and (max-width: 768px){
     #carouselDesktop {
