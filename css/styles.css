@@ -275,6 +275,9 @@ p {
     left: auto;
     right: auto;
 }
+.img-custom {
+    width: 180px;
+}
 @media screen and (max-width: 768px){
     #carouselDesktop {
         display: none;
@@ -285,6 +288,11 @@ p {
     .carousel-control-prev {
         left: auto;
         right: auto;
+    }
+    .carousel-inner {
+        height: 150px;
+        display: flex;
+        align-items: center;
     }
 }
 /*----------------------------SERVICIOS----------------------------*/
