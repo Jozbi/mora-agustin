@@ -482,46 +482,47 @@ p {
     border-bottom: 1px solid black;
 }
 .about-me__img {
-    width: 100%;
+    width: 80%;
     object-fit: cover;
     border-radius: 5px;
 }
 .about-me__container {
     width: 100%;
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: justify;
 }
+.about-me__container p, .about-me__container h2 {
+    margin-bottom: 1rem;
+}
 .about-me__container a {
-    width: 100%;
+    width: 180px;
     padding: 0.7rem 1rem;
     text-align: center;
     font-weight: 700;
     font-size: 1.2rem;
     transition: all 0.4s ease-in-out;
 }
-@media screen and (max-width: 768px) {
-    .about-me {
-        height: auto;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-row-gap: .5rem;
-        padding: 2rem 2rem 1rem 2rem;
-    }
-    .about-me__img {
-        width: 80%;
-        height: 90%;
-    }
+.about-me__container a:hover {
+    color: #F5CB5C;
+    background-color: #414066;
+}
+@media screen and (max-width: 1200px) {
     .about-me__container {
-        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+    .about-me__container a {
+      align-self: center;  
+    }
     .about-me__container p {
-        margin: 2rem 0;
+        margin-bottom: 1rem;
+    }
+    .about-me__img {
+        width: 100%;
     }
 }
 /*-----------------------SOLICITAR PRESUPUESTO---------------------*/
