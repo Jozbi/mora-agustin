@@ -527,48 +527,56 @@ p {
 }
 /*-----------------------SOLICITAR PRESUPUESTO---------------------*/
 /*Tarjeta*/
-.contact__title {
-    margin: 1rem 0 2rem 0;
-    text-align: center;
+.contact-section {
+    padding: 1rem;
 }
-.contact-card {
+.row-bg {
     width: 100%;
-    height: 75%;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
+    margin: 0;
+    background-image: linear-gradient(180deg,#ddd 10%, #414066 10%, #414066 90% ,#ddd 90%);  
 }
 .contact-card__container--1 {
-    width: 40vw;
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.container--1 {
+    display: grid;
+    grid-template-columns: 50px 200px;
+    grid-template-rows: 75px 10px;
+    grid-column-gap: .8rem;
+    grid-template-areas: 
+    "icon title"
+    "none text";
+    align-items: center;
     justify-content: center;
     align-items: center;
 }
-.contact-card__container--1 div {
-    margin: 2rem;
+.container--1 img{
+    grid-area: icon;
+}
+.container--1 h2{
+    grid-area: title;
+    font-weight: 700;
+}
+.container--1 p{
+    grid-area: text;
+}
+.contact-icon {
+    width: 50px;
 }
 .contact-card__container--2 {
-    width: 60vw;
+    width: 50%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contact__form {
-    width: 35vw;
-    height: 100%;
-    padding: 2rem;
-    position: relative;
-    z-index: 100;
     background-color: #ffffff;
     border: 1px solid black;
+    border-radius: 5px;
 }
-.btn--contact, .contact__form input, textarea {
-    width: 100%;
-}
-#submit:hover {
-    color: #0AA71A;
+@media screen and (max-width:768px) {
+    .row-bg {
+        background-image: none;
+        background-color: #414066;
+    }
 }
