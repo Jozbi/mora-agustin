@@ -280,7 +280,6 @@ p {
 }
 .bg-body {
     background-color: #dddddd !important;
-    color: #dddddd !important;
 }
 @media screen and (max-width: 768px){
     #carouselDesktop {
