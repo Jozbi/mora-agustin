@@ -444,48 +444,94 @@ p {
     }
 } 
 /*----------------------------PROYECTOS----------------------------*/
-.patners__title {
-    padding: 1rem;
-    margin: 1rem 0 1.5rem 0;
-    text-align: center;
-    font-style: oblique;
-    color: #100F0F;
-    border: 1px solid black;
-    border-right: none;
-    border-left: none;
-}
-
+/*Proyectos*/
 .projects {
     width: 100%;
-    padding: 1rem;
-    margin: 0 auto .5rem auto;
-    border-bottom: 1px solid black;
+    padding: 2rem;
+    border-bottom: 3px solid black;
 }
-.projects img {
+.projects__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+}
+.project-item {
     width: 100%;
     height: 100%;
+}
+.project-item img {
+    width: 100%;
+    height: 480px;
+    margin-bottom: 1rem;
     object-fit: cover;
-    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all 0.4s ease-out;
 }
-.projects img:hover {
-    transform: translate(0px, -3px);
+.project-item h2 {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: .1rem;
 }
-.projects__container {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 250px);
-    grid-gap: 20px;
+.project-item p {
+    color: gray;
+    text-align: justify;
 }
-.projects__container img:nth-child(1) {
-    grid-column-start: span 2;
+@media screen and (max-width:1200px) {
+    .projects__container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr)
+    }
+    .project-item img {
+        height: 375px;
+    }
 }
-.projects__container img:nth-child(4) {
-    grid-row-start: span 2;
+@media screen and (max-width:768px) {
+    .projects__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .project-item img {
+        height: 440px;
+    }
+}
+/*Patners*/
+.patners {
+    background-color: #414066;
+    display: flex;
+    justify-content: center;
+    color: #dddddd;
+    padding: 2rem;
+}
+.patners-container {
+    text-align: center;
+}
+.patners__title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: .2rem;
+}
+.patners__p p {
+    letter-spacing: .1rem;
+    margin-bottom: 3rem;
+}
+.patners__p span{
+    display: block;
+}
+.patners-logo img {
+    width: 200px;
+    object-fit: cover;
+    margin: 0 3rem;
+}
+@media screen and (max-width:768px) {
+    .patners-logo img {
+        margin: 2rem;
+    }
 }
 /*----------------------------SOBRE MI----------------------------*/
 .about-me {
