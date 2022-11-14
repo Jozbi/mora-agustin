@@ -470,6 +470,11 @@ p {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all 0.4s ease-out;
 }
+@media (min-width:1200px) {
+    .project-item img:hover {
+        transform: scale(1.05);
+    }
+}
 .project-item h2 {
     font-size: 1.8rem;
     font-style: italic;
