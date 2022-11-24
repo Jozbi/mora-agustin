@@ -1,0 +1,15 @@
+/* Boton */
+.btn-custom {
+    background-color: #414066;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.btn--icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.icon {
+    margin-left: .3rem; 
+}

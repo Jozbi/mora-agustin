@@ -1,0 +1,24 @@
+/*----------------- FOOTER------------------ */
+.footer-custome {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #100F0F;
+    color: #ffffff; 
+}
+@media screen and (max-width: 768px) {
+    .footer-custome {
+        height: auto;
+        padding: .5rem;
+        flex-direction: column-reverse;
+    }
+    .footer-custome p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-mobile {
+        display: block;
+    }
+}

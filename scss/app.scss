@@ -1,3 +1,16 @@
-main {
-    color: red;
-}
+//Base
+@import './base/reset';
+@import './base/global';
+@import './base/typo';
+
+//Components
+@import './components/buttons';
+@import './components/carousel';
+@import './components/feature';
+
+//Layout
+@import './layout/header';
+@import './layout/footer';
+
+//Views
+@import './views/index';
