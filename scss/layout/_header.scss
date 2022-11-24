@@ -31,10 +31,14 @@
     margin-left: 1rem;
 }
 @media screen and (max-width: 992px) {
-    .navbar-nav {
-        align-items: flex-start;
-        .nav-item {
-            margin: 0 1vw;
+    .navbar {
+        .navbar-collapse {
+            .navbar-nav {
+                align-items: flex-start;
+                .nav-item {
+                margin: 0 1vw;
+                }
+            }
         }
     }
     .header__logo {
