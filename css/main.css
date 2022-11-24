@@ -232,11 +232,20 @@ p {
         background-color: #414066; }
 
 @media screen and (max-width: 768px) {
-  .hero__container {
-    width: 50vw;
-    margin-top: -7vh; }
-    .hero__container p {
-      margin: 1.2rem 0; } }
+  .hero {
+    justify-content: flex-start;
+    align-items: center; }
+    .hero .hero__container {
+      width: auto;
+      padding: 1rem;
+      margin: 20vh 0 2rem 0; }
+      .hero .hero__container h1 {
+        font-size: 3.4rem; }
+        .hero .hero__container h1 span {
+          display: block; }
+      .hero .hero__container p {
+        width: 100%;
+        margin: 2rem 0; } }
 
 /* Client */
 .client {
