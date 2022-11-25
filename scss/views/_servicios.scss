@@ -1,4 +1,10 @@
 /*----------------------------SERVICIOS----------------------------*/
+.main-service {
+    background-image: url(../assets/images/background-geo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 /*Cards*/
 .service__container {
     padding: 1.5rem 2rem;
@@ -44,7 +50,7 @@
             }
             .subtitle {
                 font-size: 1.1rem;
-                margin-bottom: .3rem;
+                margin: .5rem 0;
             }
             .bar {
                 width: 50px;

@@ -295,6 +295,12 @@ p {
     letter-spacing: .2rem; }
 
 /*----------------------------SERVICIOS----------------------------*/
+.main-service {
+  background-image: url(../assets/images/background-geo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 /*Cards*/
 .service__container {
   padding: 1.5rem 2rem; }
@@ -335,7 +341,7 @@ p {
         margin-bottom: .2rem; }
       .service__container .card .text-container .subtitle {
         font-size: 1.1rem;
-        margin-bottom: .3rem; }
+        margin: .5rem 0; }
       .service__container .card .text-container .bar {
         width: 50px;
         height: 5px;
