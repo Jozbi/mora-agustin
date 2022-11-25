@@ -149,8 +149,8 @@ p {
           transition: all 0.4s ease-in-out; }
           .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
             color: #F5CB5C; }
-          .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active {
-            color: #F5CB5C; }
+        .navbar .navbar-collapse .navbar-nav .nav-item .active {
+          color: #F5CB5C; }
 
 /* Logo */
 .header__logo {
