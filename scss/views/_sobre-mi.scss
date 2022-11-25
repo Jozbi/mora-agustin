@@ -1,0 +1,50 @@
+/*----------------------------SOBRE MI----------------------------*/
+.about-me {
+    height: auto;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+.about-me__img {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.about-me__container {
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+.about-me__container p, .about-me__container h2 {
+    margin-bottom: 1rem;
+}
+.about-me__container a {
+    width: 180px;
+    padding: 0.7rem 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.4s ease-in-out;
+}
+.about-me__container a:hover {
+    color: #F5CB5C;
+    background-color: #414066;
+}
+@media screen and (max-width: 1200px) {
+    .about-me__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .about-me__container a {
+      align-self: center;  
+    }
+    .about-me__container p {
+        margin-bottom: 1rem;
+    }
+    .about-me__img {
+        width: 100%;
+    }
+}

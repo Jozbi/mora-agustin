@@ -9,6 +9,7 @@
 @import './components/carousel';
 @import './components/feature';
 @import './components/scrolling-title';
+@import './components/form';
 
 //Layout
 @import './layout/header';
@@ -16,4 +17,7 @@
 
 //Views
 @import './views/index';
-@import './views/servicios'
+@import './views/servicios';
+@import './views/proyectos';
+@import './views/sobre-mi';
+@import './views/solicitar-presupuesto';
