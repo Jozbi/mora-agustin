@@ -1,0 +1,115 @@
+.contact-container {
+    width: 80vw;
+    background-color: #414066;
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .container--1 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .info {
+            display: grid;
+            grid-template-columns: 50px 200px;
+            grid-template-rows: 75px 10px;
+            grid-column-gap: .8rem;
+            grid-template-areas: 
+            "icon title"
+            "none text";
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            img{
+                grid-area: icon;
+                width: 50px;
+            }
+            h2{
+                grid-area: title;
+                font-weight: 700;
+            }
+            p{
+                grid-area: text;
+            }
+        }
+    }
+    .col-border {
+        border-right: 1px solid black;
+    }
+    .container--2 {
+        width: 90%;
+        height: 100%;
+        padding: 1rem 0;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .card__bar {
+            margin: 0 auto;
+            margin-top: .5rem;
+            width: 50%;
+            height: 5px;
+            border-radius: 1rem;
+            background-color: $accent_color;
+            margin-bottom: .5rem;
+        }
+        h2 {
+            font-style: italic;
+            font-weight: 700
+        }
+        form {
+            input, textarea {
+                width: 100%;
+                padding: 0.5rem 1rem;
+                margin: 1.5rem 0;
+                outline: none;
+                border: 2px solid #ddd;
+                font-size: 1.1rem;
+                background-color: #ffffff; 
+                &:active {
+                    border: 2px solid black;
+                } 
+            }
+            .btn-contact {
+                width: 100%;
+                background-color: white;
+                font-size: 1.2rem;
+                font-weight: 900;
+                color: #100F0F;
+                border: 1px solid black;
+                &:hover {
+                    background-color: $primary_color;
+                    color: $accent_color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .contact-container {
+        .container--1 {
+            .info {
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contact-container {
+        .container--1 {
+            .info {
+                margin-bottom: 1rem;
+            }
+        }
+        .col-border {
+            padding: 1.5rem 0;
+            border-right: none;
+            border-bottom: 1px solid black
+        }
+    }
+}

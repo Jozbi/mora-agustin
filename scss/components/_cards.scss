@@ -1,0 +1,114 @@
+.card {
+    width: 90%;
+    height: 275px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: white;
+    border: 2px solid #dddddd;
+    border-radius: 1rem;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .8);
+    transition: all 0.3s ease-in-out;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    &:hover {
+        box-shadow: 0 34px 32px -33px rgba(0, 0, 0, .18);
+        transform: translate(0px, -3px);
+    } 
+    img {
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;  
+    }
+    &:hover img {
+        transform: scale(1.02) rotate(.2deg);
+    }
+    .text-container {
+        height: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: justify;
+        .title {
+            font-size: 1.5rem;
+            margin-bottom: .2rem;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            margin: .5rem 0;
+        }
+        .bar {
+            width: 50px;
+            height: 5px;
+            border-radius: 1rem;
+            background-color: $accent_color;
+            margin-bottom: .5rem;
+            transition: width 0.3s ease-in-out;
+        }
+        .text {
+            font-size: 1rem;
+            line-height: 25px;
+        }
+        .tagbox {
+            height: auto;
+            margin-bottom: .2rem;
+        }
+        .tag {
+            margin-right: .5rem;
+            padding: .5rem 1rem;
+            border-radius: 10px;
+            background-color: $primary_color;
+            color: white;
+            box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .8);
+        }
+    }
+    &:hover .bar {
+        width: 70px;
+    }
+}
+/*Media Query Tablet*/ 
+@media screen and (max-width:1200px) {
+    .card {
+        width: 100%;
+        .text-container {
+            .text {
+                margin-bottom: 1rem;
+            }
+            .tagbox {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .tag {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+}
+/*Media Query Telefono*/
+@media screen and (max-width:768px) {
+    .card {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        img {
+            width: 100%;
+            height: 200px;
+        }
+        .text-container {
+            .text {
+                margin-bottom: 1rem;
+            }
+            .subtitle {
+                margin: .6rem 0;
+            }
+            .tag {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+}
