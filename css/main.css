@@ -1,3 +1,4 @@
+/*------MIXIN TITULO-------*/
 /* ---------------NORMALIZE------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&display=swap");
 * {
@@ -29,16 +30,16 @@ p {
   font-size: 1.2rem; }
 
 /*-------------------BUTTON-------------------*/
-.btn-custom {
+.btn-custom, .contact-container .container--2 form .btn, .hero .hero__container a, .about-me .about-me__container a {
   background-color: #414066;
   color: white;
   border-radius: 10px;
   transition: all 0.4s ease-in-out; }
-  .btn-custom .btn--icon {
+  .btn-custom .btn--icon, .contact-container .container--2 form .btn .btn--icon, .hero .hero__container a .btn--icon, .about-me .about-me__container a .btn--icon {
     width: 100%;
     display: flex;
     align-items: center; }
-    .btn-custom .btn--icon .icon {
+    .btn-custom .btn--icon .icon, .contact-container .container--2 form .btn .btn--icon .icon, .hero .hero__container a .btn--icon .icon, .about-me .about-me__container a .btn--icon .icon {
       margin-left: .3rem; }
 
 /*-----------------SERVICE CARD----------------*/
@@ -283,14 +284,14 @@ p {
       background-color: #ffffff; }
       .contact-container .container--2 form input:active, .contact-container .container--2 form textarea:active {
         border: 2px solid black; }
-    .contact-container .container--2 form .btn-contact {
+    .contact-container .container--2 form .btn {
       width: 100%;
       background-color: white;
       font-size: 1.2rem;
       font-weight: 900;
       color: #100F0F;
       border: 1px solid black; }
-      .contact-container .container--2 form .btn-contact:hover {
+      .contact-container .container--2 form .btn:hover {
         background-color: #414066;
         color: #F5CB5C; }
 
@@ -317,13 +318,13 @@ p {
   background-color: #414066;
   border: 1px solid black; }
   .scrolling-container h1 {
-    width: 100%;
-    margin: 0;
-    position: absolute;
-    text-align: center;
     font-size: 2rem;
     font-weight: 900;
-    color: #ffffff;
+    color: white;
+    margin-bottom: 0;
+    width: 100%;
+    position: absolute;
+    text-align: center;
     transform: translateX(90%);
     animation: scrolling 14s linear infinite; }
 
@@ -419,9 +420,11 @@ p {
     margin-left: 9vw;
     color: white; }
     .hero .hero__container h1 {
-      letter-spacing: .3rem;
       font-size: 3.5rem;
       font-weight: 700;
+      color: white;
+      margin-bottom: 0;
+      letter-spacing: .3rem;
       font-style: italic; }
     .hero .hero__container p {
       margin: .5rem 0 1.1rem 0; }

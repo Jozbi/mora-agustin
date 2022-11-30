@@ -9,13 +9,10 @@
     background-color: #414066;
     border: 1px solid black;
     h1 {
-        width: 100%;
-        margin: 0;
+        @include titleStyle(2rem,900,white,0);
+        width: 100%; 
         position: absolute;
         text-align: center;
-        font-size: 2rem;
-        font-weight: 900;
-        color: #ffffff;
         transform: translateX(90%);
         animation: scrolling 14s linear infinite;
     }    
