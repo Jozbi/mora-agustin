@@ -43,7 +43,7 @@ p {
       margin-left: .3rem; }
 
 /*-----------------SERVICE CARD----------------*/
-.card {
+.service_card {
   width: 90%;
   height: 275px;
   display: flex;
@@ -52,84 +52,85 @@ p {
   justify-content: space-between;
   overflow: hidden;
   background-color: white;
-  border: 2px solid #dddddd;
+  border: 1px solid black;
   border-radius: 1rem;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 21px -12px rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease-in-out; }
-  .card:not(:last-child) {
+  .service_card:not(:last-child) {
     margin-bottom: 3rem; }
-  .card:hover {
+  .service_card:hover {
     box-shadow: 0 34px 32px -33px rgba(0, 0, 0, 0.18);
     transform: translate(0px, -3px); }
-  .card img {
+  .service_card img {
     width: 40%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out; }
-  .card:hover img {
+  .service_card:hover img {
     transform: scale(1.02) rotate(0.2deg); }
-  .card .text-container {
+  .service_card .text-container {
     height: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: justify; }
-    .card .text-container .title {
+    .service_card .text-container .title {
       font-size: 1.5rem;
+      font-weight: 600;
       margin-bottom: .2rem; }
-    .card .text-container .subtitle {
+    .service_card .text-container .subtitle {
       font-size: 1.1rem;
       margin: .5rem 0; }
-    .card .text-container .bar {
+    .service_card .text-container .bar {
       width: 50px;
       height: 5px;
       border-radius: 1rem;
       background-color: #F5CB5C;
       margin-bottom: .5rem;
       transition: width 0.3s ease-in-out; }
-    .card .text-container .text {
+    .service_card .text-container .text {
       font-size: 1rem;
       line-height: 25px; }
-    .card .text-container .tagbox {
+    .service_card .text-container .tagbox {
       height: auto;
       margin-bottom: .2rem; }
-    .card .text-container .tag {
+    .service_card .text-container .tag {
       margin-right: .5rem;
       padding: .5rem 1rem;
       border-radius: 10px;
       background-color: #414066;
       color: white;
       box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.8); }
-  .card:hover .bar {
+  .service_card:hover .bar {
     width: 70px; }
 
 /*Media Query Tablet*/
 @media screen and (max-width: 1200px) {
-  .card {
+  .service_card {
     width: 100%; }
-    .card .text-container .text {
+    .service_card .text-container .text {
       margin-bottom: 1rem; }
-    .card .text-container .tagbox {
+    .service_card .text-container .tagbox {
       display: flex;
       flex-wrap: wrap; }
-    .card .text-container .tag {
+    .service_card .text-container .tag {
       margin-bottom: .5rem; } }
 
 /*Media Query Telefono*/
 @media screen and (max-width: 768px) {
-  .card {
+  .service_card {
     width: 100%;
     height: auto;
     flex-direction: column; }
-    .card img {
+    .service_card img {
       width: 100%;
       height: 200px; }
-    .card .text-container .text {
+    .service_card .text-container .text {
       margin-bottom: 1rem; }
-    .card .text-container .subtitle {
+    .service_card .text-container .subtitle {
       margin: .6rem 0; }
-    .card .text-container .tag {
+    .service_card .text-container .tag {
       margin-bottom: .5rem; } }
 
 /*---------------CAROUSEL----------------*/
@@ -322,6 +323,7 @@ p {
     font-weight: 900;
     color: white;
     margin-bottom: 0;
+    letter-spacing: .1rem;
     width: 100%;
     position: absolute;
     text-align: center;
@@ -474,7 +476,7 @@ p {
 
 /*----------------------------SERVICIOS----------------------------*/
 .main-service {
-  background-image: url(../assets/images/background-geo.png);
+  background-image: url(../../assets/images/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -623,7 +625,7 @@ p {
   height: auto;
   display: flex;
   flex-direction: column;
-  background-image: url(../assets/images/background-contact.jpg);
+  background-image: url(../../assets/images/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }

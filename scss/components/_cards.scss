@@ -1,5 +1,5 @@
 /*-----------------SERVICE CARD----------------*/
-.card {
+.service_card {
     width: 90%;
     height: 275px;
     display: flex;
@@ -8,9 +8,9 @@
     justify-content: space-between;
     overflow: hidden;
     background-color: white;
-    border: 2px solid #dddddd;
+    border: 1px solid black;
     border-radius: 1rem;
-    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .8);
+    box-shadow: 0 4px 21px -12px rgba(255, 255, 255, .2);
     transition: all 0.3s ease-in-out;
     &:not(:last-child) {
         margin-bottom: 3rem;
@@ -37,6 +37,7 @@
         text-align: justify;
         .title {
             font-size: 1.5rem;
+            font-weight: 600;
             margin-bottom: .2rem;
         }
         .subtitle {
@@ -74,7 +75,7 @@
 }
 /*Media Query Tablet*/ 
 @media screen and (max-width:1200px) {
-    .card {
+    .service_card {
         width: 100%;
         .text-container {
             .text {
@@ -92,7 +93,7 @@
 }
 /*Media Query Telefono*/
 @media screen and (max-width:768px) {
-    .card {
+    .service_card {
         width: 100%;
         height: auto;
         flex-direction: column;
