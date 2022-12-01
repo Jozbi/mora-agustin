@@ -476,7 +476,7 @@ p {
 
 /*----------------------------SERVICIOS----------------------------*/
 .main-service {
-  background-image: url(../../assets/images/hero.png);
+  background-image: url(../assets/images/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -625,7 +625,7 @@ p {
   height: auto;
   display: flex;
   flex-direction: column;
-  background-image: url(../../assets/images/hero.png);
+  background-image: url(../assets/images/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
