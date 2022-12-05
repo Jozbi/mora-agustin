@@ -443,7 +443,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .hero {
-    background-position: right; }
+    background-position: left; }
     .hero .hero__container {
       width: 100vw;
       padding: 1rem;
