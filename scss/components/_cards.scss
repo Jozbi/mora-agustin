@@ -7,7 +7,8 @@
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    background-color: white;
+    background-color: $background_white;
+    color: $dark_letter;
     border: 1px solid black;
     border-radius: 1rem;
     box-shadow: 0 4px 21px -12px rgba(255, 255, 255, .2);
@@ -65,7 +66,7 @@
             padding: .5rem 1rem;
             border-radius: 10px;
             background-color: $primary_color;
-            color: white;
+            color: $white_letter;
             box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .8);
         }
     }

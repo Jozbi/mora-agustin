@@ -27,14 +27,14 @@
     .hero__container {
         width: 35vw;
         margin-left: 9vw;
-        color: white;
         h1 {
-            @include titleStyle(3.5rem, 700, white,0);
+            @include titleStyle(3.5rem, 700, $white_letter,0);
             letter-spacing: .3rem;
             font-style: italic;
         }
         p {
             margin: .5rem 0 1.1rem 0;
+            color: $white_letter;
         } 
         a {
             @extend .btn-custom;
@@ -88,5 +88,6 @@
         font-weight: 700;
         font-style: italic;
         letter-spacing: .2rem;
+        color: $dark_letter;
     }
 }

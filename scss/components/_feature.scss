@@ -4,7 +4,7 @@
     height: auto;
     padding: 1rem 1rem 2rem 1rem;
     background-color: $primary_color;
-    color: #ffffff;
+    color: $white_letter;
     border-bottom: 2px solid black;
     .feature__title {
         text-align: center;
@@ -29,7 +29,6 @@
             margin-top: -2vh;
             grid-area: icon;
             justify-self: center;
-            color: white;
         }
         h3 {
             grid-area: title;

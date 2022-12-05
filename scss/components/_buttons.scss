@@ -1,7 +1,7 @@
 /*-------------------BUTTON-------------------*/
 .btn-custom {
     background-color: $primary_color;
-    color: white;
+    color: $white_letter;
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
     .btn--icon {

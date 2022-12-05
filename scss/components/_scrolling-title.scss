@@ -6,10 +6,10 @@
     position: relative;
     display: flex;
     align-items: center;
-    background-color: #414066;
+    background-color: $primary_color;
     border: 1px solid black;
     h1 {
-        @include titleStyle(2rem,900,white,0);
+        @include titleStyle(2rem,900,$white_letter,0);
         letter-spacing: .1rem;
         width: 100%; 
         position: absolute;
