@@ -1,5 +1,6 @@
 /*------MIXIN TITULO-------*/
 /* ---------------NORMALIZE------------------ */
+@import url(/../animate.css/animate.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&display=swap");
 * {
   box-sizing: border-box;
@@ -20,6 +21,7 @@ body {
   background-color: #F2F4F7;
   color: #F9FAFB; }
 
+/* Animaciones Titulo */
 /* -----------------TIPOGRAFIA----------------- */
 body {
   font-family: 'Poppins', sans-serif; }
