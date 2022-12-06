@@ -1,5 +1,5 @@
 {
-  "name": "portafolio-mora",
+  "name": "mora-agustin",
   "version": "1.0.0",
   "description": "Proyecto realizado con HTML y CSS para el curso de Desarrollo Web de CoderHouse. Tambien se aplico la libreria Bootstrap v5.2.",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jozbi/portafolio-mora.git"
+    "url": "git+https://github.com/Jozbi/mora-agustin.git"
   },
   "author": "Nahuel Javier Pera",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jozbi/portafolio-mora/issues"
+    "url": "https://github.com/Jozbi/mora-agustin/issues"
   },
-  "homepage": "https://github.com/Jozbi/portafolio-mora#readme",
+  "homepage": "https://github.com/Jozbi/mora-agustin#readme",
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
