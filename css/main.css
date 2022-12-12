@@ -310,8 +310,8 @@ p {
 @media screen and (max-width: 768px) {
   .contact-container .container--1 .info {
     grid-template-columns: 50px 150px;
-    grid-template-rows: 75px 50px;
-    margin-bottom: 1rem; }
+    grid-template-rows: 75px auto;
+    margin-bottom: .5rem; }
   .contact-container .col-border {
     padding: 1.5rem 0;
     border-right: none;
