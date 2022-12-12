@@ -41,7 +41,8 @@ p {
   .btn-custom .btn--icon, .contact-container .container--2 form .btn .btn--icon, .hero .hero__container a .btn--icon, .about-me .about-me__container a .btn--icon {
     width: 100%;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between; }
     .btn-custom .btn--icon .icon, .contact-container .container--2 form .btn .btn--icon .icon, .hero .hero__container a .btn--icon .icon, .about-me .about-me__container a .btn--icon .icon {
       margin-left: .3rem; }
 
@@ -480,7 +481,7 @@ p {
 
 /*----------------------------SERVICIOS----------------------------*/
 .main-service {
-  background-image: url(../assets/images/hero.png);
+  background-image: url(../assets/images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -500,12 +501,13 @@ p {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 60px;
-  grid-row-gap: 60px; }
+  grid-row-gap: 30px; }
   .projects__container .project-item {
     width: 100%;
     height: 100%; }
     .projects__container .project-item img {
       width: 100%;
+      color: #1D2939;
       height: 480px;
       margin-bottom: 1rem;
       border-radius: 10px;
@@ -560,14 +562,21 @@ p {
       margin-bottom: 3rem; }
       .patners .patners-container p span {
         display: block; }
-    .patners .patners-container .patners-logo img {
-      width: 200px;
-      object-fit: cover;
-      margin: 0 3rem; }
+    .patners .patners-container .patners-logo .patner-link {
+      color: white;
+      text-decoration: none; }
+      .patners .patners-container .patners-logo .patner-link img {
+        width: 200px;
+        object-fit: cover;
+        margin: 0 4rem; }
+      .patners .patners-container .patners-logo .patner-link .devon {
+        width: 100px; }
 
 @media screen and (max-width: 768px) {
-  .patners .patners-container .patners-logo img {
-    margin: 2rem; } }
+  .patners .patners-container h2 {
+    font-size: 2.4rem; }
+  .patners .patners-container .patners-logo .patner-link img {
+    margin: 2rem 0; } }
 
 /*----------------------------SOBRE MI----------------------------*/
 .about-me {
@@ -592,13 +601,13 @@ p {
     .about-me .about-me__container p, .about-me .about-me__container h2 {
       margin-bottom: 2rem; }
     .about-me .about-me__container a {
-      width: auto;
+      width: 200px;
       padding: 0.7rem 1rem;
       text-align: center;
       font-weight: 700;
       font-size: 1.2rem;
       transition: all 0.4s ease-in-out;
-      align-self: center; }
+      align-self: left; }
       .about-me .about-me__container a:hover {
         color: #F5CB5C;
         background-color: #414066; }
@@ -629,7 +638,7 @@ p {
   height: auto;
   display: flex;
   flex-direction: column;
-  background-image: url(../assets/images/hero.png);
+  background-image: url(../assets/images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
