@@ -12,8 +12,8 @@
         justify-content: space-evenly;
         .info {
             display: grid;
-            grid-template-columns: 50px 200px;
-            grid-template-rows: 75px 10px;
+            grid-template-columns: 50px 275px;
+            grid-template-rows: 75px 30px;
             grid-column-gap: .8rem;
             grid-template-areas: 
             "icon title"
@@ -93,6 +93,8 @@
     .contact-container {
         .container--1 {
             .info {
+                grid-template-columns: 50px 200px;
+                grid-template-rows: 75px 30px;
                 span {
                     display: block;
                 }
@@ -105,6 +107,8 @@
     .contact-container {
         .container--1 {
             .info {
+                grid-template-columns: 50px 150px;
+                grid-template-rows: 75px 50px;
                 margin-bottom: 1rem;
             }
         }

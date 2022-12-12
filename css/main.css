@@ -242,8 +242,8 @@ p {
     justify-content: space-evenly; }
     .contact-container .container--1 .info {
       display: grid;
-      grid-template-columns: 50px 200px;
-      grid-template-rows: 75px 10px;
+      grid-template-columns: 50px 275px;
+      grid-template-rows: 75px 30px;
       grid-column-gap: .8rem;
       grid-template-areas: "icon title" "none text";
       align-items: center;
@@ -301,11 +301,16 @@ p {
         color: #F5CB5C; }
 
 @media screen and (max-width: 1200px) {
-  .contact-container .container--1 .info span {
-    display: block; } }
+  .contact-container .container--1 .info {
+    grid-template-columns: 50px 200px;
+    grid-template-rows: 75px 30px; }
+    .contact-container .container--1 .info span {
+      display: block; } }
 
 @media screen and (max-width: 768px) {
   .contact-container .container--1 .info {
+    grid-template-columns: 50px 150px;
+    grid-template-rows: 75px 50px;
     margin-bottom: 1rem; }
   .contact-container .col-border {
     padding: 1.5rem 0;
